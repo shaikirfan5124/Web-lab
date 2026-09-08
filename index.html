@@ -1,45 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Country Capital Selector</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Book Information</title>
 </head>
 
-<body>
+<frameset cols="30%,70%">
 
-    <div class="container">
+    <frame src="book.html?list" name="leftFrame">
 
-        <h1>Country & Capital</h1>
+    <frame src="book.html?book1" name="rightFrame">
 
-        <p>Select a country to see its capital</p>
+</frameset>
 
-        <select id="country" onchange="showCapital()">
-            <option value="">-- Select a Country --</option>
-            <option value="New Delhi">India</option>
-            <option value="Tokyo">Japan</option>
-            <option value="Paris">France</option>
-            <option value="London">United Kingdom</option>
-            <option value="Canberra">Australia</option>
-        </select>
-
-        <div id="result">
-            <span id="capital"></span>
-        </div>
-
-    </div>
-
-    <script>
-        function showCapital() {
-            var country = document.getElementById("country");
-            var capital = document.getElementById("capital");
-
-            if (country.value == "") {
-                capital.innerHTML = "";
-            } else {
-                capital.innerHTML = "Capital: " + country.value;
-            }
-        }
-    </script>
-
-</body>
 </html>

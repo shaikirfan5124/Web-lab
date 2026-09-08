@@ -1,87 +1,41 @@
-/* Apply styling to the whole page */
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #e8f0fe;
-
-    /* Put the box in the center */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f1f5f9;
+    padding: 25px;
 }
 
-
-/* Main box */
-.container {
-    width: 450px;
-    padding: 40px;
-    background-color: white;
+h2 {
     text-align: center;
-
-    /* Rounded corners */
-    border-radius: 15px;
-
-    /* Shadow around the box */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    color: #1565c0;
 }
 
-
-/* Heading */
 h1 {
-    margin-bottom: 10px;
-    color: #1a237e;
-    font-size: 32px;
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 10px;
 }
 
-
-/* Paragraph below heading */
-p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 25px;
-}
-
-
-/* Dropdown box */
-select {
-    width: 80%;
+a {
+    display: block;
     padding: 12px;
-    font-size: 16px;
-
-    border: 2px solid #1a73e8;
-    border-radius: 8px;
+    margin: 10px 0;
 
     background-color: white;
-    cursor: pointer;
-}
+    color: #333;
 
-
-/* Result area */
-#result {
-    margin-top: 30px;
-    padding: 15px;
-    min-height: 30px;
-}
-
-
-/* Capital text */
-#capital {
-    color: #d32f2f;
-    font-size: 24px;
+    text-decoration: none;
     font-weight: bold;
+
+    border-radius: 6px;
 }
 
-
-/* Dropdown hover effect */
-select:hover {
-    border-color: #0d47a1;
+a:hover {
+    background-color: #1565c0;
+    color: white;
 }
 
-
-/* Dropdown focus effect */
-select:focus {
-    outline: none;
-    box-shadow: 0 0 5px #1a73e8;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
 }

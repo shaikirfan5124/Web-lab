@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script>
+
+if (window.location.search == "?list") {
+
+    document.write(`
+        <h2>Books List</h2>
+
+        <a href="book.html?book1" target="rightFrame">
+            The Alchemist
+        </a>
+
+        <a href="book.html?book2" target="rightFrame">
+            Atomic Habits
+        </a>
+
+        <a href="book.html?book3" target="rightFrame">
+            Wings of Fire
+        </a>
+
+        <a href="book.html?book4" target="rightFrame">
+            Rich Dad Poor Dad
+        </a>
+    `);
+
+}
+
+else if (window.location.search == "?book1") {
+
+    document.write(`
+        <h1>The Alchemist</h1>
+
+        <p><b>Author:</b> Paulo Coelho</p>
+        <p><b>Genre:</b> Fiction / Adventure</p>
+        <p><b>Published:</b> 1988</p>
+        <p><b>Language:</b> Portuguese</p>
+        <p><b>Price:</b> ₹399</p>
+
+        <p>
+            The Alchemist tells the story of Santiago, a young shepherd
+            who travels in search of a hidden treasure.
+            His journey teaches him about dreams, courage, love and destiny.
+        </p>
+    `);
+
+}
+
+else if (window.location.search == "?book2") {
+
+    document.write(`
+        <h1>Atomic Habits</h1>
+
+        <p><b>Author:</b> James Clear</p>
+        <p><b>Genre:</b> Self-Help / Personal Development</p>
+        <p><b>Published:</b> 2018</p>
+        <p><b>Language:</b> English</p>
+        <p><b>Price:</b> ₹499</p>
+
+        <p>
+            Atomic Habits explains how small changes in daily habits
+            can lead to major improvements.
+            It teaches readers how to build good habits and break bad ones.
+        </p>
+    `);
+
+}
+
+else if (window.location.search == "?book3") {
+
+    document.write(`
+        <h1>Wings of Fire</h1>
+
+        <p><b>Author:</b> A. P. J. Abdul Kalam</p>
+        <p><b>Genre:</b> Autobiography</p>
+        <p><b>Published:</b> 1999</p>
+        <p><b>Language:</b> English</p>
+        <p><b>Price:</b> ₹350</p>
+
+        <p>
+            Wings of Fire describes the life and achievements of
+            Dr. A. P. J. Abdul Kalam.
+            It covers his childhood, education and journey as a scientist.
+        </p>
+    `);
+
+}
+
+else if (window.location.search == "?book4") {
+
+    document.write(`
+        <h1>Rich Dad Poor Dad</h1>
+
+        <p><b>Author:</b> Robert Kiyosaki</p>
+        <p><b>Genre:</b> Personal Finance</p>
+        <p><b>Published:</b> 1997</p>
+        <p><b>Language:</b> English</p>
+        <p><b>Price:</b> ₹450</p>
+
+        <p>
+            Rich Dad Poor Dad explains financial education and
+            money management.
+            It teaches readers about assets, liabilities and investing.
+        </p>
+    `);
+
+}
+
+</script>
+
+</body>
+</html>
