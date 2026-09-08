@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Capital Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Country & Capital</h1>
+
+        <p>Select a country to see its capital</p>
+
+        <select id="country" onchange="showCapital()">
+            <option value="">-- Select a Country --</option>
+            <option value="New Delhi">India</option>
+            <option value="Tokyo">Japan</option>
+            <option value="Paris">France</option>
+            <option value="London">United Kingdom</option>
+            <option value="Canberra">Australia</option>
+        </select>
+
+        <div id="result">
+            <span id="capital"></span>
+        </div>
+
+    </div>
+
+    <script>
+        function showCapital() {
+            var country = document.getElementById("country");
+            var capital = document.getElementById("capital");
+
+            if (country.value == "") {
+                capital.innerHTML = "";
+            } else {
+                capital.innerHTML = "Capital: " + country.value;
+            }
+        }
+    </script>
+
+</body>
+</html>
